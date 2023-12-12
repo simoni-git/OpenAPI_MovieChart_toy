@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="OpenAPI_MovieChart_toy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Xdh-Xd-Eky">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MyCell" rowHeight="100" id="vXk-uU-3Ev" customClass="MyCell" customModule="OpenAPI_MovieChart_toy" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vXk-uU-3Ev" id="hSs-GM-Cb0">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="순위" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4cl-qZ-TLJ">
+                                                    <rect key="frame" x="25" y="41" width="29.666666666666671" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkW-Hu-Y7D">
+                                                    <rect key="frame" x="64.666666666666671" y="41" width="8.3333333333333286" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="영화제목:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb6-CR-mFQ">
+                                                    <rect key="frame" x="133" y="41" width="63.666666666666657" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="찰리와 초콜릿공장" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBT-S9-LZ2">
+                                                    <rect key="frame" x="201.66666666666666" y="41" width="121.66666666666666" height="20.333333333333329"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4cl-qZ-TLJ" firstAttribute="leading" secondItem="hSs-GM-Cb0" secondAttribute="leadingMargin" constant="5" id="8Zk-HZ-JBC"/>
+                                                <constraint firstItem="dkW-Hu-Y7D" firstAttribute="top" secondItem="4cl-qZ-TLJ" secondAttribute="top" id="C9H-kg-dPK"/>
+                                                <constraint firstItem="yb6-CR-mFQ" firstAttribute="top" secondItem="dkW-Hu-Y7D" secondAttribute="top" id="Kqn-c9-uBO"/>
+                                                <constraint firstItem="4cl-qZ-TLJ" firstAttribute="top" secondItem="hSs-GM-Cb0" secondAttribute="topMargin" constant="30" id="QV5-Jf-Old"/>
+                                                <constraint firstItem="jBT-S9-LZ2" firstAttribute="leading" secondItem="yb6-CR-mFQ" secondAttribute="trailing" constant="5" id="eSr-6Y-Lej"/>
+                                                <constraint firstItem="jBT-S9-LZ2" firstAttribute="top" secondItem="yb6-CR-mFQ" secondAttribute="top" id="fT1-Lj-U24"/>
+                                                <constraint firstItem="dkW-Hu-Y7D" firstAttribute="leading" secondItem="4cl-qZ-TLJ" secondAttribute="trailing" constant="10" id="hdM-bS-Gsc"/>
+                                                <constraint firstItem="yb6-CR-mFQ" firstAttribute="leading" secondItem="dkW-Hu-Y7D" secondAttribute="trailing" constant="60" id="mqh-oh-XKj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="movieNmLabel" destination="jBT-S9-LZ2" id="WcS-f6-LIH"/>
+                                            <outlet property="nameLabel" destination="yb6-CR-mFQ" id="bG0-89-JrN"/>
+                                            <outlet property="rankLabel" destination="4cl-qZ-TLJ" id="KVT-UZ-RNA"/>
+                                            <outlet property="rankNumLabel" destination="dkW-Hu-Y7D" id="Crr-sl-4uy"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xdh-Xd-Eky" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3R2-Xg-MFl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Xdh-Xd-Eky" secondAttribute="trailing" id="6Rb-E9-5gF"/>
+                            <constraint firstItem="Xdh-Xd-Eky" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yt5-qy-k6m"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Xdh-Xd-Eky" secondAttribute="bottom" id="u1J-aj-Jed"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="Xdh-Xd-Eky" id="MsL-ja-6YF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="113.74045801526717" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
